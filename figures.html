@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geometrics figures</title>
+  <title>Figuras geometricas</title>
 </head>
 <body>
   <header>
-    <h1>Geometrics figures</h1>
+    <h1>Figuras geometricas</h1>
     <p>Primer taller</p>
   </header>
 
@@ -16,19 +16,53 @@
     <h2>Calcula area y perimetro de un cuadrado</h2>
     <form action="">
 
-      <label for="inputCuadrado">
-        Escribe el tamaño de un lado del cuadrado
-      </label>
-
+      <label for="inputCuadrado">Escribe el tamaño de un lado del cuadrado</label>
       <input id="inputCuadrado" type="number">
+      <br>
+      <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
 
-      <button type="button" onclick="calcularPerimetroCuadrado()">
-        Calcular perimetro
-      </button>
+      <button type="button" onclick="calcularAreaCuadrado()">Calcular area</button>
 
-      <button type="button" onclick="calcularAreaCuadrado()">
-        Calcular area
-      </button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Calcula area y perimetro de un triangulo</h2>
+    <form action="">
+
+      <label for="inputLado1">Escribe el tamaño lado1 del triangulo</label>
+      <input id="inputLado1" type="number">
+      <br>
+      <label for="inputLado2">Escribe el tamaño lado2 del triangulo</label>
+      <input id="inputLado2" type="number">
+      <br>
+      <label for="inputBase">Escribe el tamaño de la base</label>
+      <input id="inputBase" type="number">
+      <br>
+      <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+
+      <button type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+
+    </form>
+  </section>
+
+  <section>
+    <h2>Calcula area y perimetro de un circulo con el dato que prefieras, radio o diametro</h2>
+    <form action="">
+
+      <label for="inputRadio">Escribe el radio del circulo</label>
+      <input id="inputRadio" type="number">
+      <br>
+      <button type="button" onclick="calcularPerimetroCirculoRadio()">Calcular perimetro</button>
+
+      <button type="button" onclick="calcularAreaCirculoRadio()">Calcular area</button>
+      <br>
+      <label for="inputDiametro">Escribe el diametro del circulo</label>
+      <input id="inputDiametro" type="number">
+      <br>
+      <button type="button" onclick="calcularPerimetroCirculoDiametro()">Calcular perimetro</button>
+
+      <button type="button" onclick="calcularAreaCirculoDiametro()">Calcular area</button>
 
     </form>
   </section>
