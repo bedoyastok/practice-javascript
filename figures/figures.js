@@ -7,6 +7,23 @@ function areaCuadrado(lado){
   return lado * lado;
 }
 
+//Botones
+function calcularPerimetroCuadrado(){
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const perimetro = perimetroCuadrado(value);
+  alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const area = areaCuadrado(value);
+  alert(area);
+}
+//*********************************************************
 //Codigo trinagulo
 function alturaTrianguloIsosceles(lado1, lado2, base){
   if(lado1 != lado2){
@@ -25,40 +42,7 @@ function areaTrinagulo(base, altura){
   return (base * altura) / 2;
 }
 
-//Codigo circulo
-const pi = Math.PI;
-
-function diametroCirculo(radio){
-  return radio * 2;
-}
-
-function perimetroCirculo(diametro){
-  return diametro * pi;
-}
-
-function areaCirculo(radio){
-  return (radio * radio) / pi;
-}
-
-//Botones html
-//Cuadrado
-function calcularPerimetroCuadrado(){
-  const input = document.getElementById("inputCuadrado");
-  const value = input.value;
-
-  const perimetro = perimetroCuadrado(value);
-  alert(perimetro);
-}
-
-function calcularAreaCuadrado(){
-  const input = document.getElementById("inputCuadrado");
-  const value = input.value;
-
-  const area = areaCuadrado(value);
-  alert(area);
-}
-
-//Triangulo
+//Botones
 function calcularPerimetroTriangulo(){
   const lado1 = document.getElementById("inputLado1");
   const value1 = parseFloat(lado1.value);
@@ -89,7 +73,23 @@ function calcularAreaTriangulo(){
   alert(area);
 }
 
-//Circulo
+//************************************************************
+//Codigo circulo
+const pi = Math.PI;
+
+function diametroCirculo(radio){
+  return radio * 2;
+}
+
+function perimetroCirculo(diametro){
+  return diametro * pi;
+}
+
+function areaCirculo(radio){
+  return (radio * radio) / pi;
+}
+
+//Botones
 function calcularPerimetroCirculoRadio(){
   const radio = document.getElementById("inputRadio");
   const value1 = parseFloat(radio.value);
